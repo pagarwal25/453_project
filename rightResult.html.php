@@ -10,7 +10,7 @@ try
 {
 
 
-  $pdo = new PDO('mysql:host=localhost;dbname=cozy_homes', 'pagarwal', 'pa251188');
+  $pdo = new PDO('mysql:host=localhost;dbname=cozy_homes', 'statavarthy', 'tata1988');
 
   $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   $pdo->exec('SET NAMES "utf8"');
@@ -26,7 +26,6 @@ catch (PDOException $e)
 
 try{
 	$sql = 'SELECT property.PropertyID,
-				   Apartment.aptNo,
 				   Apartment.ApartmentID,
 				   property.PropertyName,
 				   propertytype.TypeName,
@@ -82,7 +81,7 @@ catch (PDOException $e)
 		try
 		{
 
-		$pdo = new PDO('mysql:host=localhost;dbname=cozy_homes', 'pagarwal', 'pa251188');
+		$pdo = new PDO('mysql:host=localhost;dbname=cozy_homes', 'statavarthy', 'tata1988');
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$pdo->exec('SET NAMES "utf8"');
 		}
@@ -278,12 +277,13 @@ body{
     <center>
 	<table >
 	<tr>
+	<th>Apartment ID</th>
 	<th>BuildingName</th>
 	<!-- <th>Aprtment Type</th>  -->
 	<th>Price</th>
 	<th>LeasePeriod (in mths)</th>
 	<th>Address</th>
-	<th>Apartment No.</th>
+	
 	<th>PhoneNo</th>
 	<th>Rating</th>
 	<th>Click for more Info.</th>
@@ -295,11 +295,11 @@ body{
 	<td style= "width:50px"> <?php echo $Apartment['ApartmentID']; ?> </td>     
 	 <td style= "width:150px"> <?php echo $Apartment['PropertyName']; ?> </td>
      <!-- <td style= "width:200px"> <?php echo $Apartment['TypeName']; ?> </td> --> 
-        <td> $<?php echo $Apartment['Price']; ?> </td>
+        <td> <?php echo $Apartment['Price']; ?> </td>
          <td style= "width:100px"> <?php echo $Apartment['LeasePeriod']; ?> </td>
 		 <td> <?php echo $Apartment['Address']; ?> </td>
-		 <td style= "width:50px"> <?php echo $Apartment['aptNo']; ?> </td>
-		 <!-- <td style= "width:150px"> <?php echo $Apartment['PhoneNo']; ?> </td>  -->
+		 <!--<td style= "width:50px"> <?php echo $Apartment['aptNo']; ?> </td>-->
+		 <td style= "width:150px"> <?php echo $Apartment['PhoneNo']; ?> </td>  
 		 <td> <?php echo $Apartment['Rating']; ?> </td>
 		 
 		 
