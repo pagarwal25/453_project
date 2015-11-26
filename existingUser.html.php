@@ -20,7 +20,7 @@
 <!--Menu -->
 
 <div id= "menuStyle">
-<center><a href="index.html">Home</a> | <a href="newUser.html">New-User</a> | <b> Existing-User</b> | <a href="administrator.html">Administrator</a> | <a href="aboutUs.html">About US</a></center>
+<center><a href="index.html">Home</a> | <a href="newUser.html.php">New-User</a> | <b> Existing-User</b> | <a href="administrator.html">Administrator</a> | <a href="aboutUs.html">About US</a></center>
 </div>
 
 <br/>
@@ -58,7 +58,7 @@ try{
 
 
 
-$pdo = new PDO('mysql:host=localhost;dbname=cozy_homes', 'pagarwal', 'pa251188');
+$pdo = new PDO('mysql:host=localhost;dbname=cozy_homes', 'statavarthy', 'tata1988');
 
 
 	
