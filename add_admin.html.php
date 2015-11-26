@@ -172,6 +172,7 @@ while ($row = $result->fetch())
 	 </div>
 	<ul> Control Apartments</ul>
    <div>
+
      <input type="button"  onClick="location.href='add_apartment.php'" value="Add new Apartment"><br>
      <input type="button" onClick="location.href='modify_apartment.php'" value="Modify apartment"><br>
      <input type="button" onClick="location.href='delete_apartment.php'" value="Delete apartment"><br><br>
